@@ -43,7 +43,7 @@ func Save(path string, v interface{}) error {
 		return err
 	}
 	i, err := io.Copy(f, r)
-	log.Println("Saved", i, "bytes")
+	log.Println("Saved", i, "bytes", "--", "file:", path)
 	return err
 }
 
