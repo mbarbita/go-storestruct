@@ -42,8 +42,7 @@ func main() {
 	if err := storestruct.Load("./obj1.txt", obj12); err != nil {
 		log.Fatalln(err)
 	}
-	log.Println(obj12)
-	log.Println()
+	log.Print(obj12, "\n", "\n")
 
 	var obj21 = new(obj2)
 	obj21.Name = "Ra"
@@ -61,8 +60,7 @@ func main() {
 	if err := storestruct.Load("./obj2.txt", obj22); err != nil {
 		log.Fatalln(err)
 	}
-	log.Println(obj22)
-	log.Println()
+	log.Print(obj22, "\n", "\n")
 
 	obj31 := &obj3{
 		Name: "Fer",
@@ -83,7 +81,6 @@ func main() {
 	if err := storestruct.Load("./obj3.txt", obj32); err != nil {
 		log.Fatalln(err)
 	}
-	log.Println(obj32)
-	log.Println()
+	log.Print(obj32, "\n", "\n")
 
 }
